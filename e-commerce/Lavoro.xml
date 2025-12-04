@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+  <prodotti>
+    <prodotto>
+      <id>1</id>
+      <nome>Monitor LED 27" Full HD</nome>
+      <prezzo>199.99</prezzo>
+      <descrizione>Monitor IPS 27 pollici, risoluzione Full HD 1920x1080, tempo di risposta 5ms, brightness 250cd/m²</descrizione>
+    </prodotto>
+    <prodotto>
+      <id>2</id>
+      <nome>Tastiera Meccanica Wireless</nome>
+      <prezzo>89.99</prezzo>
+      <descrizione>Tastiera meccanica con switch Cherry MX, layout italiano, connessione wireless 2.4GHz, batteria 40 ore</descrizione>
+    </prodotto>
+    <prodotto>
+      <id>3</id>
+      <nome>Mouse Ergonomico Verticale</nome>
+      <prezzo>49.99</prezzo>
+      <descrizione>Mouse ergonomico verticale riduce la tensione del polso, 6 pulsanti programmabili, sensore ottico 3200 DPI</descrizione>
+    </prodotto>
+    <prodotto>
+      <id>4</id>
+      <nome>Scrivania Regolabile Motorizzata</nome>
+      <prezzo>349.99</prezzo>
+      <descrizione>Scrivania con piano 160x80cm, altezza regolabile motorizzata 70-120cm, capacità carico 120kg, pannello controllo digitale</descrizione>
+    </prodotto>
+    <prodotto>
+      <id>5</id>
+      <nome>Sedia Ufficio Ergonomica</nome>
+      <prezzo>279.99</prezzo>
+      <descrizione>Sedia ergonomica con supporto lombare, braccioli regolabili, altezza regolabile, materiale mesh traspirante</descrizione>
+    </prodotto>
+    <prodotto>
+      <id>6</id>
+      <nome>Docking Station USB-C Multipla</nome>
+      <prezzo>129.99</prezzo>
+      <descrizione>Docking station con 7 porte USB, HDMI, Ethernet, lettore schede, supporto dual monitor, alimentazione 100W</descrizione>
+    </prodotto>
+    <prodotto>
+      <id>7</id>
+      <nome>Webcam Full HD 1080p</nome>
+      <prezzo>79.99</prezzo>
+      <descrizione>Webcam con risoluzione Full HD 1080p, microfono stereo integrato, autofocus, correzione automatica illuminazione</descrizione>
+    </prodotto>
+    <prodotto>
+      <id>8</id>
+      <nome>Cuffie Bluetooth ANC</nome>
+      <prezzo>159.99</prezzo>
+      <descrizione>Cuffie wireless con cancellazione attiva del rumore, autonomia 30 ore, connessione Bluetooth 5.0, controlli touch</descrizione>
+    </prodotto>
+  </prodotti>
+</catalogo>

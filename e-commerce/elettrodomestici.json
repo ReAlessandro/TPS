@@ -1,0 +1,64 @@
+{
+  "prodotti": [
+    {
+      "id": 1,
+      "nome": "Frigorifero LG Side-by-Side",
+      "prezzo": 899.99,
+      "descrizione": "Frigorifero moderno con sistema di raffreddamento No Frost, dispenser d'acqua e ghiaccio, capacità 680 litri"
+    },
+    {
+      "id": 2,
+      "nome": "Lavastoviglie Bosch 6 Programmi",
+      "prezzo": 549.99,
+      "descrizione": "Lavastoviglie silenziosa con 6 programmi di lavaggio, display LED, capacità 13 coperti"
+    },
+    {
+      "id": 3,
+      "nome": "Lavatrice Samsung 9kg",
+      "prezzo": 599.99,
+      "descrizione": "Lavatrice intelligente con capacità 9kg, tecnologia EcoBubble, connessione SmartThings"
+    },
+    {
+      "id": 4,
+      "nome": "Asciugatrice Electrolux 8kg",
+      "prezzo": 749.99,
+      "descrizione": "Asciugatrice a pompa di calore con capacità 8kg, sensore umidità, cicli delicati"
+    },
+    {
+      "id": 5,
+      "nome": "Forno Elettrico Hotpoint 70L",
+      "prezzo": 299.99,
+      "descrizione": "Forno multifunzione con capacità 70 litri, 9 funzioni di cottura, classe energetica A"
+    },
+    {
+      "id": 6,
+      "nome": "Piano Cottura Ariston 4 Fuochi",
+      "prezzo": 189.99,
+      "descrizione": "Piano cottura a gas con 4 bruciatori, accensione piezoelettrica, griglie in ghisa"
+    },
+    {
+      "id": 7,
+      "nome": "Cappa Aspirante Candy 60cm",
+      "prezzo": 129.99,
+      "descrizione": "Cappa sottopensile silenziosà, filtri antiodore, 3 velocità, classe energetica B"
+    },
+    {
+      "id": 8,
+      "nome": "Friggitrice ad Aria Philips",
+      "prezzo": 89.99,
+      "descrizione": "Friggitrice ad aria con capacità 4.1L, timer digitale, 7 impostazioni di temperatura"
+    },
+    {
+      "id": 9,
+      "nome": "Forno a Microonde Whirlpool",
+      "prezzo": 159.99,
+      "descrizione": "Microonde con capacità 25L, 1000W di potenza, funzione grill integrata"
+    },
+    {
+      "id": 10,
+      "nome": "Caffettiera Delonghi Automatica",
+      "prezzo": 249.99,
+      "descrizione": "Macchina da caffè automatica con macinacaffè integrato, serbatoio da 2L, pannello touch"
+    }
+  ]
+}
