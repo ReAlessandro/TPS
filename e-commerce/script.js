@@ -10,41 +10,50 @@ function LetturaFileXml() {
         return;
       }
 
-      const studenti = xml.getElementsByTagName("Studente");
+      const prodotti = xml.getElementsByTagName("Prodotti");
       let str = "";
 
-      for (let i = 0; i < studenti.length; i++) {
-        let nome = studenti[i].getElementsByTagName("nome")[0].textContent;
-        let cognome = studenti[i].getElementsByTagName("cognome")[0].textContent;
-        let anno = parseInt(studenti[i].getElementsByTagName("anni")[0].textContent);
+      for (let i = 0; i < prodotti.length; i++) {
+        let nome = prodotti[i].getElementsByTagName("nome")[0].textContent;
+        let prezzo = parseInt(prodotti[i].getElementsByTagName("prezzo")[0].textContent);
+        let descrizione = prodotti[i].getElementsByTagName("descrizione")[0].textContent;
 
-        let Maggiorenni = anno >= 2007 ? "Meno di 18 anni" : "Maggiorenne!";
-        let Generazione = "";
 
-        if (anno >= 1901 && anno <= 1927)
-          Generazione = "Greatest Generation";
-        else if (anno >= 1928 && anno <= 1945)
-          Generazione = "Generazione Silenziosa";
-        else if (anno >= 1946 && anno <= 1964)
-          Generazione = "Generazione Baby Boomers";
-        else if (anno >= 1965 && anno <= 1980)
-          Generazione = "Generazione X";
-        else if (anno >= 1981 && anno <= 1996)
-          Generazione = "Millennials";
-        else if (anno >= 1997 && anno <= 2012)
-          Generazione = "Generazione Z";
-        else if (anno >= 2013)
-          Generazione = "Generazione Alpha";
-        else
-          Generazione = "N/A";
-
-       str = str + "<tr><td>" + nome + "</td><td>" + cognome + "</td><td>" + anno + "</td><td>" + Generazione + "</td><td>" + Maggiorenni + "</td><td></tr>";
+       str = str + "<tr><td>" + nome + "</td><td>" + prezzo + "</td><td>" + descrizione + "</td><td></tr>";
       }
 
       str += "</table>";
       document.getElementById("t1").innerHTML = str;
     };
-  }
+}
+
+//Lettura JSON 
+function LetturaFileJson() {
+      let leggi = new XMLHttpRequest();
+
+      leggi.open('GET', 'https://realessandro.github.io/TPS/e-commerce/elettrodomestici.json', true);
+      leggi.send();
+      leggi.onload = function () {
+        var str = "";
+        const dati = JSON.parse(leggi.responseText);
+        for (i = 0; i < dati.prodotti.length; i++) {
+            let nome = dati.prodotti[i].nome;
+            let prezzo = dati.prodotti[i].prezzo;
+            let descrizione = dati.prodotti[i].descrizione;
+
+         
+
+          str = str + "<tr><td>" + dati.prodotti[i].nome + "</td><td>" + dati.prodotti[i].prezzo + "</td><td>" + dati.prodotti[i].descrizione + "</td><td></tr>";
+        }
+
+        str = str + "</table>";
+
+
+
+        document.getElementById("t1").innerHTML = str;
+        
+      }
+}
 
 
 
