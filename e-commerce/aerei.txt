@@ -1,21 +1,5 @@
-ELENCO AEREI
-
-1. Boeing 787 Dreamliner
-   Prezzo: €250,000,000
-   Descrizione: Aereo passeggeri bimotor a lungo raggio, capacità 242-330 passeggeri, autonomia 14,685 km, motori Rolls-Royce Trent 1000
-
-2. Airbus A380
-   Prezzo: €430,000,000
-   Descrizione: Aereo passeggeri quadrimotor superjumbo, capacità 555-853 passeggeri, autonomia 15,000 km, doppio ponte su tutta la fusoliera
-
-3. Bombardier Global 7500
-   Prezzo: €72,700,000
-   Descrizione: Jet privato ultra-long-range, capacità 13-16 passeggeri, autonomia 13,890 km, cabina pressurizzata con suite privata
-
-4. Embraer E190-E2
-   Prezzo: €88,000,000
-   Descrizione: Aereo commerciale regionale bimotor, capacità 124-146 passeggeri, autonomia 4,815 km, consumo carburante ridotto del 25%
-
-5. Cessna Citation X+
-   Prezzo: €21,000,000
-   Descrizione: Jet privato mid-size, capacità 8 passeggeri, autonomia 5,925 km, velocità massima Mach 0.935, cabina moderna pressurizzata
+Boeing 787 Dreamliner;€250,000,000;Aereo passeggeri bimotor a lungo raggio
+Airbus A380;€430,000,000;Aereo passeggeri quadrimotor superjumbo
+Bombardier Global 7500;€72,700,000;Jet privato ultra-long-range
+Embraer E190-E2;€88,000,000;Aereo commerciale regionale bimotor
+Cessna Citation X+;€21,000,000;Jet privato mid-size
