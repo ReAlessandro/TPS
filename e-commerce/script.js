@@ -121,7 +121,7 @@ fetch("sport.csv").then(r => r.text()).then(dati => {
         var campi = righe[i].split(",");
         if (campi.length > 1) {
             catalogo["sport"].push({
-                nome: campi[1],
+                nome_prodotto: campi[1],
                 prezzo: campi[2],
                 descrizione: campi[3]
             });
