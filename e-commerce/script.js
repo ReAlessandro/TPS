@@ -23,7 +23,7 @@ function LetturaFileXml() {
       }
 
       str += "</table>";
-      document.getElementById("t1").innerHTML = str;
+      document.getElementById("catalogo").innerHTML = str;
     };
 }
 
@@ -50,7 +50,7 @@ function LetturaFileJson() {
 
 
 
-        document.getElementById("t1").innerHTML = str;
+        document.getElementById("catalogo").innerHTML = str;
         
       }
 }
