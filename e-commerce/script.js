@@ -16,7 +16,7 @@ function LetturaFileXML() {
 
       const prodotto = xml.getElementsByTagName("prodotto");
 
-      for (let i = 0; i < prodotti.length; i++) {
+      for (let i = 0; i < prodotto.length; i++) {
         let nome = prodotto[i].getElementsByTagName("nome")[0].textContent;
         let prezzo = prodotto[i].getElementsByTagName("prezzo")[0].textContent;
         let descrizione = prodotto[i].getElementsByTagName("descrizione")[0].textContent;
@@ -88,7 +88,7 @@ function acquista(nome, prezzo) {
 function aggiungiriga(nome, prezzo, descrizione) {
     const tabella = document.getElementById("tabella");
 
-    tab.innerHTML +=
+    tabella.innerHTML +=
         "<tr><td>" + nome + "</td><td>" + prezzo + "</td><td>" + descrizione +
         "</td><td><button onclick='acquista(\"" + nome + "\", \"" + prezzo + "\")'>Acquista</button></td></tr>";
 }
