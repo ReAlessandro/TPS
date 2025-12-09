@@ -1,6 +1,8 @@
 function pulisciTabella() {
-    document.getElementById("tabella").innerHTML =
-        "<tr><th>Nome</th><th>Prezzo</th><th>Descrizione</th><th></th></tr>";
+
+    const tab = document.getElementById("tabella");
+    if(!tab) return;
+    tab.innerHTML ="<tr><th>Nome</th><th>Prezzo</th><th>Descrizione</th><th></th></tr>";
 }
 
 function LetturaFileXML() {
@@ -40,7 +42,7 @@ function LetturaFileJSON() {
         
     const dati = JSON.parse(leggi.responseText);
 
-        for (i = 0; i < dati.prodotti.length; i++) {
+        for (let i = 0; i < dati.prodotti.length; i++) {
             let x = dati.prodotti[i];
             aggiungiriga(x.nome, x.prezzo, x.descrizione);
         }
@@ -82,7 +84,7 @@ function LetturaFileTXT(){
 }
 
 function acquista(nome, prezzo) {
-    alert("Hai acquistato: " + nome + " (€" + prezzo + ")");
+    alert("Hai acquistato: " + nome + " al prezzo di soltanto " + "(€" + prezzo + ")");
 }
 
 function aggiungiriga(nome, prezzo, descrizione) {
