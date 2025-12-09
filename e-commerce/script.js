@@ -84,7 +84,7 @@ function LetturaFileTXT(){
 }
 
 function acquista(nome, prezzo) {
-    alert("Hai acquistato: " + nome + " al prezzo di soltanto " + (" + prezzo + "));
+    alert("Hai acquistato: " + nome + " soltanto al prezzo di " + (" + prezzo + "));
 }
 
 function aggiungiriga(nome, prezzo, descrizione) {
