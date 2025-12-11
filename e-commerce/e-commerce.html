@@ -14,20 +14,45 @@ body {
 h1 {
     text-align: center;
 }
-#buttons {
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+#card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
-    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
-button {
-    padding: 10px 18px;
-    margin: 5px;
+
+#card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+#card h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#card button {
+    padding: 10px 15px;
     border: none;
-    background: #e41d1d;
+    background-color: #3276e0;
     color: white;
-    border-radius: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
 }
-button:hover {
-    background: #e3ba22;
+
+#card button:hover {
+    background-color: #255bb3;
 }
 table {
     width: 100%;
@@ -52,14 +77,25 @@ tr:hover {
     <h1> E-Commerce di Alessandro</h1>
 
     <h1>Catalogo Prodotti</h1>
-
-    <div id="buttons">
-        <button onclick="LetturaFileXML()">Carica XML</button>
-        <button onclick="LetturaFileJSON()">Carica JSON</button>
-        <button onclick="LetturaFileCSV()">Carica CSV</button>
-        <button onclick="LetturaFileTXT()">Carica TXT</button>
-    </div>
-
+    <section class="grid">
+        <div id="card">
+            <h4>Oggetti per lavoro da ufficio</h4>
+            <button onclick="LetturaFileXML()">Carica XML</button>
+        </div>
+        <div id="card">
+            <h4>Elettrodomestici</h4>
+            <button onclick="LetturaFileJSON()">Carica JSON</button>
+        </div>
+        <div id="card">
+            <h4>Attrezzature sportive</h4>
+            <button onclick="LetturaFileCSV()">Carica CSV</button>
+        </div>
+        <div id="card">
+            <h4>Tipologie di aerei</h4>
+            <button onclick="LetturaFileTXT()">Carica TXT</button>
+        </div>
+    </section>        
+        
     <table id="tabella">
         <tr>
             <th>Nome</th>

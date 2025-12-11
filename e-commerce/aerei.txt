@@ -2,4 +2,4 @@ Boeing 787 Dreamliner;€250,000,000;Aereo passeggeri bimotor a lungo raggio
 Airbus A380;€430,000,000;Aereo passeggeri quadrimotor superjumbo
 Bombardier Global 7500;€72,700,000;Jet privato ultra-long-range
 Embraer E190-E2;€88,000,000;Aereo commerciale regionale bimotor
-Cessna Citation X+;€21,000,000;Jet privato mid-size
+Cessna Citation X+;€21,000,000;Jet privato mid-size 
