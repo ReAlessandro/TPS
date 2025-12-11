@@ -33,6 +33,7 @@ function LetturaFileXML() {
 
 function Decathlon() {
     pulisciTabella();
+    let obj = new Array();
 
     let leggi = new XMLHttpRequest();
     leggi.open('GET', 'https://realessandro.github.io/TPS/e-commerce/lavoro.xml', true);
@@ -48,9 +49,9 @@ function Decathlon() {
         let nome = prodotto[i].getElementsByTagName("nome")[0].textContent;
         let prezzo = prodotto[i].getElementsByTagName("prezzo")[0].textContent;
         let descrizione = prodotto[i].getElementsByTagName("descrizione")[0].textContent;
+        let ogg = {nome: nome, prezzo: prezzo, descrizione: descrizione};
 
-
-        aggiungiriga(nome, prezzo, descrizione);
+        obj.push(ogg);
       }
 
     }
@@ -63,9 +64,14 @@ function Decathlon() {
         const righe = leggi.responseText.split("\n");
         for (let i = 1; i < righe.length; i++) {
             const colonne = righe[i].split(",");
-            aggiungiriga(colonne[0], colonne[1], colonne[2]);
+            let ogg = {nome: colonne[0], prezzo: colonne[1], descrizione: colonne[2]};
+
+            obj.push(ogg);
         }
     }
+    for(let i=0; i<obj.length; i++){
+        aggiungiriga(obj[i].nome, obj[i].prezzo, obj[i].descrizione);
+    }  
 }
 
 function LetturaFileJSON() {
