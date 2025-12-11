@@ -52,6 +52,7 @@ function Decathlon() {
         let ogg = {nome: nome, prezzo: prezzo, descrizione: descrizione};
 
         obj.push(ogg);
+        console.log(obj);
       }
 
     }
@@ -70,6 +71,7 @@ function Decathlon() {
         }
     }
     for(let i=0; i<obj.length; i++){
+        console.log(obj);
         aggiungiriga(obj[i].nome, obj[i].prezzo, obj[i].descrizione);
     }  
 }
