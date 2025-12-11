@@ -31,6 +31,43 @@ function LetturaFileXML() {
 }
 
 
+function Decathlon() {
+    pulisciTabella();
+
+    let leggi = new XMLHttpRequest();
+    leggi.open('GET', 'https://realessandro.github.io/TPS/e-commerce/lavoro.xml', true);
+    leggi.send();
+
+    leggi.onload = function () {
+      const xml = leggi.responseXML;
+      
+
+      const prodotto = xml.getElementsByTagName("prodotto");
+
+      for (let i = 0; i < prodotto.length; i++) {
+        let nome = prodotto[i].getElementsByTagName("nome")[0].textContent;
+        let prezzo = prodotto[i].getElementsByTagName("prezzo")[0].textContent;
+        let descrizione = prodotto[i].getElementsByTagName("descrizione")[0].textContent;
+
+
+        aggiungiriga(nome, prezzo, descrizione);
+      }
+
+    }
+
+    leggi.open('GET', 'https://realessandro.github.io/TPS/e-commerce/sport.csv', true);
+    leggi.send();
+
+    leggi.onload = function () {
+        var str = "";
+        const righe = leggi.responseText.split("\n");
+        for (let i = 1; i < righe.length; i++) {
+            const colonne = righe[i].split(",");
+            aggiungiriga(colonne[0], colonne[1], colonne[2]);
+        }
+    }
+}
+
 function LetturaFileJSON() {
     pulisciTabella();
 
