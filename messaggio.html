@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaggio</title>
+</head>
+<script>
+    function cifrare(){
+        const xhr =  new XMLHttpRequest();
+        xhr.open('GET', 'https://realessandro.github.io/Sistemi/TPS/pubb.json', true);
+        xhr.send();
+        xhr.onload = function(){
+            const oggetto = JSON.parse(xhr.responseText);
+            const E = oggetto.E;
+            const N = oggetto.N;
+            const M = document.getElementById("M1").value;
+
+            let C = Math.pow(M,E) % N;
+        }
+        
+        
+        
+    }
+</script>
+<body>
+    <h1>Messaggio da mandare ( SOLO NUMERICO ) </h1><br>
+    <form action="server.php" method="get">   
+        <input type="text" id = "M1" placeholder="Inserire il testo...">messaggio da cifrare</input><br>
+        
+        <input type="button" value="Cifra" onclick="cifrare()">
+
+        <label for="C">Messaggio cifrato:</label><br>
+        <input type="text" id="C" placeholder="Messaggio cifrato" readonly>
+    </form>
+</body>
+</html>
