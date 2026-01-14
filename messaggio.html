@@ -8,7 +8,7 @@
 <script>
     function cifrare(){
         const xhr =  new XMLHttpRequest();
-        xhr.open('GET', 'http://realessandro.github.io/esercizi%20TPS/TPS/pubb.json', true);
+        xhr.open('GET', 'http://realessandro.github.io/TPS/pubb.json', true);
         xhr.send();
         xhr.onload = function(){
             const oggetto = JSON.parse(xhr.responseText);
