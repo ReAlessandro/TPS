@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lunghezze base="m">
+
+    <unita codice="m"  nome="metro"        fattore="1" />
+    <unita codice="cm" nome="centimetro"   fattore="100" />
+    <unita codice="mm" nome="millimetro"   fattore="1000" />
+    <unita codice="km" nome="chilometro"   fattore="0.001" />
+    <unita codice="mi" nome="miglio"        fattore="0.000621371" />
+    <unita codice="yd" nome="iarda"         fattore="1.09361" />
+    <unita codice="ft" nome="piede"         fattore="3.28084" />
+    <unita codice="in" nome="pollici"         fattore="39.37001" />
+    
+</lunghezze>
