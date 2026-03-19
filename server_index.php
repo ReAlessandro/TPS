@@ -4,24 +4,19 @@
 
 function Convert($qty, $from, $to){
 
-$fileXML="unita.xml";
+    $xml = simplexml_load_file("unita.xml");
 
-$xml = simplexml_load_file($fileXML);
+    $fattori = [];
 
-$fattori = [];
-
-foreach($xml->unita as $c) {
-
-    if ($from==$c['codice'] || $to==$c['codice']) {
-        $fattori[(string)$c['codice']] = (float)$c['fattore'] ;
+    foreach($xml->unita as $c) {
+        $fattori[(string)$c['codice']] = (float)$c['fattore'];
     }
 
-}
-    if(isset($fattori[$from]) || isset($fattori[$to])){
-        $ris = round(($qty / $fattori[$from] * $fattori[$to]),3);
+    if(isset($fattori[$from]) && isset($fattori[$to])){
+        return round(($qty / $fattori[$from] * $fattori[$to]),3);
     }
-    return $ris; 
 
+    return "Errore conversione";
 }
 
 $server= new SoapServer("funzione.wsdl");

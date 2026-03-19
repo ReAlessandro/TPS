@@ -48,7 +48,11 @@ if (isset($_POST['qty']) && !empty($_POST['qty']) && isset($_POST['from']) && !e
         $from=$_POST['from'];
         $to=$_POST['to'];
 
-        $client = new SoapClient($wsdl_url,["location" =>"http://127.0.0.1/esercizi%20TPS/SOAP/server/server_index.php",""]);
+       $client = new SoapClient($wsdl_url, [
+    "location" => "http://127.0.0.1/esercizi%20TPS/SOAP/server/server_index.php",
+    "uri" => "urn:examples:Convertservice",
+    "trace" => 1
+]);
 
         $r = $client->convert($qty, $from, $to);
 

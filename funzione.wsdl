@@ -1,8 +1,9 @@
 <definitions name = "ConvertService"
-             targetNamespace = ""
+             targetNamespace="urn:Convertservice"
+             xmlns:tns="urn:Convertservice"
              xmlns = "http://schemas.xmlsoap.org/wsdl/"
              xmlns:soap = "http://schemas.xmlsoap.org/wsdl/soap/"
-             xmlns:tns = ""
+             
              xmlns:xsd = "http://www.w3.org/2001/XMLSchema">
 
     <message name = "ConvertRequest">
@@ -12,7 +13,7 @@
     </message>
 
     <message name = "ConvertResponse">
-        <part name = "result" type = "xsd:string"/>
+        <part name = "result" type = "xsd:float"/>
     </message>
 
     <portType name = "Convert_PortType">
